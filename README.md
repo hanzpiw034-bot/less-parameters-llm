@@ -35,9 +35,9 @@ The following table shows LaMini training results with the baseline and the opti
 
 ## Usage:
 ```
-!pip install -q -U transformers
+!pip install -q -U transformers==4.51.3
 !pip install -q -U accelerate
-!pip install -q -U flash-attn --no-build-isolation
+!pip install -q -U flash-attn==2.7.3 --no-build-isolation
 
 from transformers import AutoTokenizer, AutoModelForCausalLM, GenerationConfig, pipeline
 from transformers import LlamaTokenizer
